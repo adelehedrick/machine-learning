@@ -31,8 +31,10 @@ X = [ones(m, 1) X];
 %       
 
 
+[~,p] = max(X*all_theta', [], 2);
 
-
+% the index value of the max probability is put into p, we don't care about
+% what the value of the max was, hense the ~
 
 
 
